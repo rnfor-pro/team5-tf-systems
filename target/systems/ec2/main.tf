@@ -12,7 +12,7 @@ terraform {
 # }
 
 module "server" {
-  source = "../modules/ec2"
+  source = "https://github.com/rnfor-pro/team5-tf-base/tree/main//modules/ec2"
   num = 5
   instance_type = "t2.micro"
   ami = "ami-06ca3ca175f37dd66"
